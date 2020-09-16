@@ -1,1 +1,27 @@
-[{"id":1600258803371,"Nome":"Batman","poder":"Inteligência"},{"id":1600259967705,"Nome":"Mulher Maravilha","poder":"Força e resiliência"},{"id":1600260152826,"Nome":"Super Girl","poder":"Agilidade"},{"id":1600261957029,"Nome":"Super Girl","poder":"Agilidade"},{"id":1,"nome":"Flash","poder":"Speed"}]
+[
+    {
+        "id": 1600258803371,
+        "Nome": "Batman",
+        "poder": "Inteligência"
+    },
+    {
+        "id": 1600259967705,
+        "Nome": "Mulher Maravilha",
+        "poder": "Força e resiliência"
+    },
+    {
+        "id": 1600260152826,
+        "Nome": "Super Girl",
+        "poder": "Agilidade"
+    },
+    {
+        "id": 1600261957029,
+        "Nome": "Super Girl",
+        "poder": "Agilidade"
+    },
+    {
+        "id": 1,
+        "nome": "Flash",
+        "poder": "Speed"
+    }
+]
