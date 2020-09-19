@@ -60,6 +60,30 @@ class Database {
         const resultado = await this.escreverArquivo(dados)
         return resultado 
     }
+
+    async update(id, modifications){
+       
+        const dados = await this.obterDadosArquivo()
+
+        const index = dados.findIndex(item => item.id === parseInt(id))
+     
+        if(id === -1) throw Error("O usuario informado nao existe")
+
+        const atual = dados[index]
+
+        const objetoAtualizar = {
+            ...atual,
+            ...modifications
+        }
+
+        dados.splice(index, 1)
+
+        return await this.escreverArquivo([
+            ...dados,
+            objetoAtualizar
+        ])
+
+    }
 }
 
 
