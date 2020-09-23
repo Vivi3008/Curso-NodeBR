@@ -1,1 +1,41 @@
-[{"Nome":"Batman","Poder":"Dinheiro"},{"id":1,"nome":"Flash","poder":"Speed"},{"id":1600538430993,"Nome":"Super Girl","poder":"Agilidade"},{"id":1600538567965,"Nome":"Super Girl","poder":"Agilidade"},{"id":1600538623218,"Nome":"Super Girl","poder":"Agilidade"},{"id":1600538681951,"Nome":"Super Girl","poder":"Agilidade"},{"id":1600538701175,"Nome":"Super Girl","poder":"Agilidade"},{"id":2,"Nome":"Batman","poder":"Energia do Anel","Poder":"Dinheiro"}]
+[
+    {
+        "id": 1600862596085,
+        "nome": "MUlher Maravilha",
+        "poder": "Resiliencia"
+    },
+    {
+        "id": 1600862623246,
+        "nome": "Flash",
+        "poder": "Velocidade"
+    },
+    {
+        "id": 1600862637327,
+        "nome": "Aquaman",
+        "poder": "Marinho"
+    },
+    {
+        "id": 1600862650010,
+        "nome": "Batman",
+        "poder": "Dinheiro"
+    },
+    {
+        "id": 1600862663172,
+        "nome": "Hulk",
+        "poder": "Força"
+    },
+    {
+        "id": 1600862691060,
+        "nome": "Lanterna Verde",
+        "poder": "Energia do Anel"
+    },
+    {
+        "id": 1600862800434,
+        "nome": "Chapolin Colorado",
+        "poder": "Marreta Biônica"
+    },
+    {
+        "poder": "Força",
+        "id": "1600863110181"
+    }
+]

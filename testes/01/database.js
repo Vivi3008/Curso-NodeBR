@@ -20,24 +20,19 @@ class Database {
 
     async cadastrar(heroi){
         const dados = await this.obterDadosArquivo()
-        const id = heroi.id<=2 ? heroi.id : Date.now()
-        //heroiComId ira concatenar o id criado acima com os dados que vieram do heroi com a função rest/spread
-        const heroiComId = {
-            id,
-            ...heroi
-        }
-
+     
         const dadosFinal = [
            ...dados,
-           heroiComId
+           heroi
         ]
+
         const resultado = await this.escreverArquivo(dadosFinal)
         return resultado
     }
 
     async listar(id){
         const dados = await this.obterDadosArquivo() 
-        const dadosFiltrados = dados.filter( item => id ? (item.id===id) : true)
+        const dadosFiltrados = dados.filter( item => id ? (item.id===id) : true) 
        
         return dadosFiltrados
     }
@@ -71,16 +66,15 @@ class Database {
 
         const atual = dados[index]
 
-        const objetoAtualizar = {
-            ...atual,
-            ...modifications
-        }
+       /*  const objetoAtualizar = JSON.parse(JSON.stringify(modifications)) */
 
+        const dadosAtualizar = Object.assign({}, atual, modifications)
+       
         dados.splice(index, 1)
 
         return await this.escreverArquivo([
             ...dados,
-            objetoAtualizar
+            dadosAtualizar
         ])
 
     }
