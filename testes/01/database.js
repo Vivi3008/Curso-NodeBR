@@ -64,11 +64,11 @@ class Database {
      
         if(id === -1) throw Error("O usuario informado nao existe")
 
-        const atual = dados[index]
+        const atual = dados.filter( item => item.id === id)
 
-       /*  const objetoAtualizar = JSON.parse(JSON.stringify(modifications)) */
+        const objetoAtualizar = JSON.parse(JSON.stringify(modifications)) 
 
-        const dadosAtualizar = Object.assign({}, atual, modifications)
+        const dadosAtualizar = Object.assign(...atual, modifications)
        
         dados.splice(index, 1)
 
